@@ -1,14 +1,18 @@
 <h1 align="center">
-📄<br>Padrões de commits 
+⛰️ Zenith Inova - Padrões de Commits e Branches
 </h1>
 
 <h1 align="center">
-  <img src="gitcommit.png">
+  <img src="ZenithLogo.png" width="400px" height="400px">
+</h1>
+
+<h1 align="center">
+📄 Commits 
 </h1>
 
 De acordo com a documentação do **Conventional Commits**, Commits Semânticos são uma convenção simples para ser utilizada nas mensagens de commit. Essa convenção define um conjunto de regras para criar um histórico de commit explícito, o que facilita a criação de ferramentas automatizadas.
 
-Esses commits auxiliarão você e sua equipe a entenderem de forma facilitada quais alterações foram realizadas no trecho de código que foi commitado.
+Esses commits auxiliarão a equipe da Zenith Inova a entenderem de forma facilitada quais alterações foram realizadas nos trechos de códigos que foram commitados.
 
 Essa identificação ocorre por meio de uma palavra e emoji que identifica se aquele commit realizado se trata de uma alteração de código, atualização de pacotes, documentação, alteração de visual, teste...
 
@@ -30,11 +34,15 @@ O commit semântico possui os elementos estruturais abaixo (tipos), que informam
 
 - `style` - Commits do tipo style indicam que houveram alterações referentes a **formatações de código**, semicolons, trailing spaces, lint... (Não inclui alterações em código).
 
-- `refactor` - Commits do tipo refactor referem-se a mudanças devido a **refatorações que não alterem sua funcionalidade**, como por exemplo, uma alteração no formato como é processada determinada parte da tela, mas que manteve a mesma funcionalidade, ou melhorias de performance devido a um code review.
+- `refactor` - Commits do tipo refactor referem-se a mudanças devido a **refatorações que não alterem sua funcionalidade**, como por exemplo, uma alteração no formato como é processada determinada parte da tela, mas que manteve a mesma funcionalidade, ou melhorias de performance devido a um code review. Pode ser uma atualização que não adiciona um recurso nem corrige bugs.
 
-- `chore` - Commits do tipo chore indicam **atualizações de tarefas** de build, configurações de administrador, pacotes... como por exemplo adicionar um pacote no gitignore. (Não inclui alterações em código)
+- `chore` - Commits do tipo chore indicam **atualizações de tarefas** de build, configurações de administrador, pacotes... como por exemplo adicionar um pacote no gitignore. (Não inclui alterações em código). Outras atualizações que não alteram os arquivos de teste ou src.
 
-- `ci` - Commits do tipo ci indicam mudanças relacionadas a **integração contínua** (_continuous integration_).
+- `ci` - Commits do tipo ci indicam mudanças relacionadas a **integração contínua** (_continuous integration_). Mudanças nos scripts de configuração e arquivos de CI.
+
+- `revert` - Commits do tipo revert revertem um commit feito anteriormente. Deve conter o Id do commit a ser revertido e a descrição da reversão.
+
+- `init` - Commit do tipo initial é apenas o primeiro commit a ser dado no repositório, com informações de README e Licenças, por exemplo. (Não tem alterações de código)
 
 ## ☑️ Recomendações
 
@@ -43,6 +51,10 @@ O commit semântico possui os elementos estruturais abaixo (tipos), que informam
 - Para descrever com detalhes, usar a descrição do commit;
 - Usar um emoji no início da mensagem de commit representando sobre o commit;
 - Um link precisa ser adicionado em sua forma mais autêntica, ou seja: sem encurtadores de link e links afiliados;
+- Coloque a primeira letra em maiúsculo e omita o ponto no final da sentença;
+- Mantenha em mente de utilizar somente letras minúsculas enquanto utilizar commits tradicionais;
+- Se houver corpo do commit, deve ser limitado a 72 caracteres, e as linhas de abertura devem idealmente não ultrapassar 50 caracteres;
+- Na mensagem de commit, explique o que você está fazendo e por que você está fazendo.
 
 ## 🍧 Complementos de Commits
 
@@ -180,6 +192,11 @@ O commit semântico possui os elementos estruturais abaixo (tipos), que informam
       <td></td>
     </tr>
     <tr>
+      <td>Revertendo commit</td>
+      <td>🔙 <code>:back:</code></td>
+      <td><code>revert</code></td>
+    </tr>
+    <tr>
       <td>Revertendo mudanças</td>
       <td>💥 <code>:boom:</code></td>
       <td><code>fix</code></td>
@@ -302,6 +319,12 @@ O commit semântico possui os elementos estruturais abaixo (tipos), que informam
         <code>git commit -m ":bulb: docs: Comentários sobre a função LoremIpsum( )"</code>
       </td>
       <td>💡 docs: Comentários sobre a função LoremIpsum( )</td>
+    </tr>
+    <tr>
+      <td>
+        <code>git commit -m ":back: revert: Commit 4ea7133 - Voltar para o início da landing page"</code>
+      </td>
+      <td>🔙 revert: Commit 4ea7133 - Voltar para o início da landing page</td>
     </tr>
   </tbody>
 </table>
