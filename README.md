@@ -48,22 +48,10 @@ O commit semântico possui os elementos estruturais abaixo (tipos), que informam
 
 - Adicione um título consistente com o título do conteúdo;
 - Recomendamos que na primeira linha deve ter no máximo 4 palavras;
-- Para descrever com detalhes, usar a descrição do commit;
 - Usar um emoji no início da mensagem de commit representando sobre o commit;
-- Um link precisa ser adicionado em sua forma mais autêntica, ou seja: sem encurtadores de link e links afiliados;
 - Coloque a primeira letra em maiúsculo e omita o ponto no final da sentença;
 - Mantenha em mente de utilizar somente letras minúsculas enquanto utilizar commits tradicionais;
-- Se houver corpo do commit, deve ser limitado a 72 caracteres, e as linhas de abertura devem idealmente não ultrapassar 50 caracteres;
 - Na mensagem de commit, explique o que você está fazendo e por que você está fazendo.
-
-## 🍧 Complementos de Commits
-
-- **Rodapé:** Geralmente uma informação sobre o revisor e numero de card de trello ou jira 
-  Exemplo: Reviewed-by: Elisandro Mello Refs #133
-- **Corpo** : descrições mais precisas do que está contido no commit, apresentando impactos e os motivos pelos quais foram empregadas as alterações no código, como também instruções essenciais para intervenções futuras. 
-  Exemplo: see the issue for details on typos fixed.
-- **Descrições**:  uma descrição sucinta da mudança
-  Exemplo: correct minor typos in code
 
 ## 💈 Padrões de emojis
 
