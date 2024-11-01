@@ -229,6 +229,10 @@ O commit semântico possui os elementos estruturais abaixo (tipos), que informam
       <td>🥅 <code>:goal_net:</code></td>
       <td></td>
     </tr>
+    <tr>
+      <td>Adicionar arquivo em .gitignore</td>
+      <td>👻 <code>:ghost:</code></td>
+      <td></td>
   </tbody>
 </table>
 
@@ -331,7 +335,7 @@ O Git Flow é recomendado para projetos que utilizam versionamento semântico ou
 
 ## ✍️ Modelo do Git Flow
 
-Em nosso repositório central (origin), temos duas branches que sempre existirão no ciclo de vida de nossas aplicações. 
+Em nosso repositório central (origin), temos duas branches que sempre existirão no ciclo de vida de nossas aplicações.
 
 - `master` - Será sempre nosso código-fonte que está em produção.
 
