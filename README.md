@@ -233,6 +233,12 @@ O commit semântico possui os elementos estruturais abaixo (tipos), que informam
       <td>Adicionar arquivo em .gitignore</td>
       <td>👻 <code>:ghost:</code></td>
       <td></td>
+    </tr>
+    <tr>
+      <td>Adicionar uma variável de ambiente</td>
+      <td>🌍 <code>:globe_showing_europe_africa:</code></td>
+      <td></td>
+    </tr>
   </tbody>
 </table>
 
